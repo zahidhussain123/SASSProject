@@ -2,8 +2,8 @@ $color: (
   primary: blue,
   primary-light: lime,
   tertiary: green,
-  accent:pink,
-  primary-dark:darken(black,40%)
+  accent: pink,
+  primary-dark: darken(black, 40%),
 );
 
 $padding: 15px;
@@ -40,7 +40,7 @@ main {
   section#card {
     background-color: white;
     padding: 20px;
-    width: 80%;
+    width: 40%;
     margin: 1em auto;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -70,29 +70,28 @@ main {
     }
   }
   section#primary {
-      color: white;
-      padding: $padding;
+    color: white;
+    padding: $padding;
+    text-align: center;
+
+    h1 {
+      font-size: 3em;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    a {
+      color: color(primary-dark);
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      background-color: color(accent);
       text-align: center;
-
-      h1 {
-          font-size: 3em;
-          margin-top: 10px;
-
-      }
-      p{
-          font-size: 1.5em;
-      }
-      a{
-          color: color(primary-dark);
-          border-radius: 20px;
-          text-decoration: none;
-          font-weight: bold;
-          display: block;
-          background-color: color(accent);
-          text-align: center;
-          margin: 50px auto 0 auto;
-          padding: $padding;
-          width: 300px;
-      }
+      margin: 50px auto 0 auto;
+      padding: $padding;
+      width: 300px;
+    }
   }
 }
